@@ -60,9 +60,9 @@ class Work(ModelSQL, ModelView):
     sequence = fields.Integer('Sequence')
 
     # Changes from 3.8 moved to 3.6
-    company = fields.Many2One('company.company', 'Company', required=True,
+    company = fields.Many2One('company.company', 'Company'
         select=True)
-    name = fields.Char('Name', required=True, select=True)
+    name = fields.Char('Name', select=True)
 
     @staticmethod
     def order_sequence(tables):
