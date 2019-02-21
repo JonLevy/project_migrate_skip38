@@ -1,0 +1,5 @@
+A hacked up module to allow for migrating with 3.6 as a stepping stone, but
+skipping 3.8.
+
+Issue is that project.work.company is a function field in 3.8, but moved to
+Many2One in 3.8.  Here, those changes are moved forward to 3.6.
